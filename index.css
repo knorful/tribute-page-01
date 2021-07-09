@@ -1,7 +1,103 @@
-/* Main */
-body {
-  background-color: black;
+/* Universal */
+
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
 }
+
+/* Main */
+main {
+  background: url("./imgs/kobe-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
 #title {
   text-align: center;
+  color: black;
+  background-color: white;
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+#img-div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#img-caption {
+  background-color: white;
+}
+
+#image {
+  max-width: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Tribute Info */
+
+#tribute-info {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: rgb(226, 225, 225);
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Career Stats */
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: rgb(202, 202, 202);
+}
+
+table,
+th {
+  border: 1px solid black;
+}
+
+tbody td {
+  border-right: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td:last-child {
+  border-right: none;
+}
+
+#career-stats a {
+  text-decoration: none;
+  color: blue;
+  font-style: bold;
+  margin-left: 5px;
+}
+
+/* Footer */
+
+footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  li,
+  a,
+  p,
+  td,
+  figcaption {
+    font-size: 0.75rem;
+  }
 }
